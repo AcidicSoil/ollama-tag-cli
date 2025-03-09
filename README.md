@@ -1,5 +1,10 @@
 # Ollama Tag CLI
 
+[![CI](https://github.com/AcidicSoil/ollama-tag-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/AcidicSoil/ollama-tag-cli/actions/workflows/ci.yml)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Node.js Version](https://img.shields.io/node/v/ollama-tag-cli)](https://nodejs.org/)
+[![GitHub issues](https://img.shields.io/github/issues/AcidicSoil/ollama-tag-cli)](https://github.com/AcidicSoil/ollama-tag-cli/issues)
+
 A command-line tool for managing tags in the Ollama ecosystem.
 
 ## Features
@@ -16,23 +21,23 @@ A command-line tool for managing tags in the Ollama ecosystem.
 ### Prerequisites
 
 - Node.js v16 or higher
-- npm or yarn
+- Yarn or pnpm package manager
 
 ### Install from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ollama-tag-cli.git
+git clone https://github.com/AcidicSoil/ollama-tag-cli.git
 cd ollama-tag-cli
 
 # Install dependencies
-npm install
+yarn install
 
 # Build the project
-npm run build
+yarn build
 
 # Link globally (optional)
-npm link
+yarn link
 ```
 
 ## Usage
@@ -94,13 +99,13 @@ Tags are stored in a JSON file located at:
 
 ```bash
 # Install dependencies
-npm install
+yarn install
 
 # Run in development mode with auto-reloading
-npm run dev
+yarn dev
 
 # Run tests
-npm test
+yarn test
 ```
 
 ## License
@@ -109,7 +114,7 @@ ISC
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/ollama-tag-cli/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/AcidicSoil/ollama-tag-cli/issues).
 
 ## Roadmap
 
