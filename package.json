@@ -1,0 +1,45 @@
+{
+  "name": "ollama-tag-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing tags in Ollama ecosystem",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ollama-tag": "./dist/index.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "prepare": "npm run build",
+    "backup": "git add . && git commit -m \"Backup: $(date -u '+%Y-%m-%d %H:%M:%S') - Development checkpoint\"",
+    "backup:push": "npm run backup && git push -u origin main",
+    "backup:full": "npm run backup && git branch -M main && git push -u origin main",
+    "setup:repo": "git init && git branch -M main && npm run backup"
+  },
+  "keywords": [
+    "ollama",
+    "cli",
+    "tagging",
+    "management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.10",
+    "jest": "^29.7.0",
+    "typescript": "^5.8.2"
+  }
+}
